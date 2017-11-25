@@ -1,0 +1,44 @@
+/*.white{
+	color:white;
+	background-color: red;
+}
+
+.fontWeight{
+	font-weight: bolder;
+	}*/
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.button {
+		display: inline-block;
+		padding: 0.5em 0.75em;
+		font-size: 2em;
+		text-decoration: none;
+		background-color: #bada55;
+		color:black;
+	}
+
+	.menu {
+		position:fixed;
+		right:-0;
+		top: 0;
+		bottom: 0;
+		padding: 1em;
+		background-color: #1ce;
+		width:200px;
+		/*display:none;*/
+		transition: 1s ease-in-out;
+		transform:translateX(200px);
+
+	}
+
+	.menu.is-open{
+		/*display:block;*/
+		transition: 1s ease-in-out;
+		transform:translateX(0px);
+
+	}
+
+

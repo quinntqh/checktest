@@ -1,15 +1,107 @@
-body {
+*{
+  box-sizing: border-box
+}
 
-	margin:0;
-	background-color: grey;
-	
+body{
+  margin:0;
+  font-family: helvetica;
+  background-color: #e6e6e6;  
+}
+
+h3{
+  font-size: 1em;
+}
+
+h4{
+  font-size:0.85em;
+  font-weight: 300;
+}
+a{
+  color: #42ab9e;
+  font-weight: bold;
+  text-decoration:none;
 }
 
 
-
-
-
-p {
-
-	
+nav{
+  background-color: grey;
+  position: fixed;
+  top:0;
+  width:100%;
+  padding: 20px 10px;
 }
+
+img{
+  max-width: 100%;
+}
+
+.container{
+  max-width: 1300px;
+  margin: 40px auto;
+}
+
+.title{
+  margin: 80px 0px 20px 0px;
+}
+
+.title h2{
+  font-weight: bold; 
+  font-size: 1em;
+}
+
+.title span{
+  font-weight: normal;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns:1fr;
+  grid-gap:40px;
+}
+  
+@media all and (min-width:558px) {
+  .collections { 
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (min-width:1010px){
+  .collections{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.box{
+  background-color: grey;
+
+}
+
+.box img{
+  display: block;
+
+}
+
+.box-text{
+  position: relative;
+  background-color: #fcfcfc;
+  padding: 30px;
+}
+
+.awwwardsteamtag{
+  font-weight: bold;
+}
+
+.svg{
+  position: absolute;
+  bottom: 0;
+  right:10px;
+  padding:10px;
+  background-color: orange;
+}
+
+.banner{
+  background-image: cover;
+
+}
+
+
